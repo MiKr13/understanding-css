@@ -16,15 +16,19 @@ body {
     padding: 30px;
     height: 500px;
     display: flex;
-    flex-flow: row wrap; /*flex-direction flex-wrap*/
-    align-items: center;
-    justify-content:center;
-    align-content: flex-start;
+    flex-flow: row wrap; /* flex-direction flex-wrap shorthand */
+    /* flex-direction depends on axis, see image 3. Axis difference */
+    /* flex wrap: wrap; wraps elements if size decreased */
+    align-items: center; /* aligns respective to cross-axis */
+    justify-content: center; /* align respective to main axis */
+    align-content: space-around; /* works when we have more than one line, 
+    tells what happens to the extra space present between lines across cross axis */
 }
 
 .div1 {
     background-color: #f800db;
     margin: 5px;
+    width: 100%;
 }
 
 .div2 {
